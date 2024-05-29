@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_10195594Ejercicio5.Rectangulo"
+             Title="Rectangulo">
+    <!--<Summary>
+    <Createddate> 25 may. 2024</Createddate>
+    <company> Bazar Rosario </company>
+    <lastmodificationdate> 29 may. 2024</lastmodificationdate>
+    <lastmodificationdescription>
+           Ultima modificación. Agregue la documentacion XML al programa y la validación de los campos
+    </lastmodificationdescription>
+    <lastmodifierautor> Estrella Orellana</lastmodifierautor>
+</Summary>-->
+    <ScrollView>
+    <VerticalStackLayout Padding="20" Spacing="15">
+
+            <Image Source="rectangulo.jpg" WidthRequest="250" HorizontalOptions="Center"/>
+            <Label 
+            Text="Ejercicio 5 : dada la altura y la base de un rectángulo, calcule el perímetro y la superficie del mismo"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+            <Entry Placeholder="Digite la altura del rectangulo" x:Name="Altura"/>
+            <Entry Placeholder="Digite la base del rectangulo" x:Name="Base"/>
+            <Entry Placeholder="Resultado" x:Name="EntryR"/>
+            <Button Text="Calcular Perimetro y Superficie" Clicked="Button_Clicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
